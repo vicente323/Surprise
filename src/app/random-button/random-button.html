@@ -1,0 +1,21 @@
+<div class="container" #container>
+  <div class="button-group" #buttonGroup>
+    <div 
+      class="moving-button"
+      #movingButton
+      (mouseenter)="moveElement()"
+      [style.left.px]="position.x"
+      [style.top.px]="position.y"
+      [class.has-moved]="hasMoved">
+      <button mat-raised-button>
+        No
+      </button>
+    </div>
+
+    <div class="static-button">
+      <button mat-raised-button (click)="redirectToPage()">
+        Yes
+      </button>
+    </div>
+  </div>
+</div>

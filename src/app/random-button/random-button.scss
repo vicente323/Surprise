@@ -1,0 +1,31 @@
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.button-group {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transform: translateY(-50%);
+}
+
+.moving-button {
+  position: relative;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.moving-button.has-moved {
+  transition: left 0.3s ease, top 0.3s ease;
+}
+
+.static-button {
+  position: relative;
+}

@@ -1,0 +1,57 @@
+.page-title {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: red;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 20px;
+}
+
+.bottom-left-image {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1;
+
+  img {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+  }
+
+
+}
+.page-title,
+.moving-button,
+.static-button {
+  z-index: 2;
+}
+
+.bottom-right-image {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+
+  img {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+
+
+.hearts-background {
+
+
+
+
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Ctext x='10' y='35' font-size='20' fill='%23ff8fab' opacity='.45'%3E%E2%99%A5%3C/text%3E%3C/svg%3E");
+
+  background-repeat: repeat;
+}   
