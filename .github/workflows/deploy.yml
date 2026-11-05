@@ -30,8 +30,13 @@ jobs:
 
       - name: Build Angular
         run: npx ng build --base-href /Surprise/
-      - name: Verify build output
-        run: ls -R dist/Surprise/
+      
+      - name: Inspect build output
+        run: |
+          echo "Angular build directories:"
+          ls -la dist/
+          find dist/ -name index.html
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
     
