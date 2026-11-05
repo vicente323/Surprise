@@ -29,7 +29,7 @@ jobs:
         run: npm ci
 
       - name: Build Angular
-        run: npx ng build 
+        run: npx ng build --base-gref /Surprise/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
