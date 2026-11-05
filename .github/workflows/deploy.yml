@@ -33,7 +33,11 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
-
+      - name: Inspect build output
+          run: |
+            pwd
+            ls -la
+            ls -R dist
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
