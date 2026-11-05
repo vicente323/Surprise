@@ -29,7 +29,7 @@ jobs:
         run: npm ci
 
       - name: Build Angular
-        run: npx ng build --base-href /my-angular-project/
+        run: npx ng build --base-href /surprise/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
