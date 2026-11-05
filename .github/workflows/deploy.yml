@@ -29,7 +29,7 @@ jobs:
         run: npm ci
 
       - name: Build Angular
-        run: npx ng build --base-href /Surprise
+        run: npx ng build --base-href /Surprise/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -37,7 +37,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: dist/surprise/browser
+          path: dist/Surprise/browser
 
       - name: Deploy
         uses: actions/deploy-pages@v4
